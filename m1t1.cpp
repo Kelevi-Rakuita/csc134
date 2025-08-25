@@ -1,5 +1,5 @@
 /*
-m1+1 = hello, user
+m1t1 = hello, user
 Kelevi-Rakuita, 08/25/25
 INPUT: run the program
 PROCESS: None yet
