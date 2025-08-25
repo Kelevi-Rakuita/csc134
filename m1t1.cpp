@@ -17,7 +17,7 @@ int main() {
     // strings hold words
 string first_name = "Kelevi";
 
-cout << "Hello, " << first_name << endl;cout << "Hello, user!" << endl;
+cout << "Hello, " << first_name << endl;
     // output
     return 0; // no errors
 }
