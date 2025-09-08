@@ -6,8 +6,6 @@ M2LAB
 
 
 
-
-
 */
 #include <iostream>
 using namespace std;
@@ -19,6 +17,9 @@ int main() {
     double profit;
     const double COST_PER_CUBIC_FOOT = 0.23; // relates to cost
     const double CHARGE_PER_CUBIC_FOOT= 0.5; // relates to charge
+    
+    
+    
     // Get the crate info
     cout <<"Welcome to the crate program. " << endl;
     cout <<"Crate Length: ";
