@@ -1,3 +1,11 @@
+/*
+CSC 134
+M2T2
+Kelevi Rakuita
+9/15/2025
+purpose: Generate a "good receipt"
+*/
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -13,7 +21,7 @@ int main() {
     total = mealPrice + taxAmount;
 
     cout << fixed << setprecision(2);
-    cout << "=== Simple Receipt ===" << endl;
+    cout << "=== Shop receipt ===" << endl;
     cout << "Price before tax: $" << mealPrice << endl;
     cout << "Tax (8%):        $" << taxAmount << endl;
     cout << "Total:           $" << total << endl;
