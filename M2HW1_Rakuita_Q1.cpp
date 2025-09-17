@@ -10,52 +10,48 @@ Kelevi Rakuita
 #include <cstdlib>   // Required for random number generation (rand, srand)
 #include <ctime>     // Required to seed the random number generator (time)
 
+
+using namespace std;   // <-- allows us to drop "std::"
+
 int main() {
     // --- Variable Declaration ---
-    std::string name;
+    string name;
     double startBalance, deposit, withdrawal, finalBalance;
     int accountNumber;
 
-    std::cout << "Welcome to the Digital Bank! 🏦\n\n";
+    cout << "Welcome to the Digital Bank! 🏦\n\n";
 
     // --- User Input ---
-    // Prompt for the user's full name
-    std::cout << "Please enter the name for the account: ";
-    // getline is used to read the entire line, including spaces
-    std::getline(std::cin, name);
+    cout << "Please enter the name for the account: ";
+    getline(cin, name);
 
-    // Prompt for financial details
-    std::cout << "Enter your starting account balance: $";
-    std::cin >> startBalance;
+    cout << "Enter your starting account balance: $";
+    cin >> startBalance;
 
-    std::cout << "Enter the amount to deposit: $";
-    std::cin >> deposit;
+    cout << "Enter the amount to deposit: $";
+    cin >> deposit;
 
-    std::cout << "Enter the amount to withdraw: $";
-    std::cin >> withdrawal;
+    cout << "Enter the amount to withdraw: $";
+    cin >> withdrawal;
 
     // --- Data Processing ---
-    // Seed the random number generator using the current time
     srand(time(0)); 
-    // Generate a random 6-digit account number (between 100000 and 999999)
-    accountNumber = rand() % 900000 + 100000;
+    accountNumber = rand() % 900000 + 100000; // random 6-digit account number
 
-    // Calculate the final balance
     finalBalance = startBalance + deposit - withdrawal;
 
     // --- Display Output ---
-    std::cout << "\n========================================\n";
-    std::cout << "         Account Summary\n";
-    std::cout << "========================================\n";
+    cout << "\n========================================\n";
+    cout << "         Account Summary\n";
+    cout << "========================================\n";
 
-    // Set the output format for money to show two decimal places
-    std::cout << std::fixed << std::setprecision(2);
+    cout << fixed << setprecision(2);
 
-    std::cout << "Account Holder:   " << name << std::endl;
-    std::cout << "Account Number:   " << accountNumber << std::endl;
-    std::cout << "Final Balance:    $" << finalBalance << std::endl;
+    cout << "Account Holder:   " << name << endl;
+    cout << "Account Number:   " << accountNumber << endl;
+    cout << "Final Balance:    $" << finalBalance << endl;
     
-    std::cout << "========================================\n";
+    cout << "========================================\n";
 
     return 0;
 }
