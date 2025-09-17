@@ -1,7 +1,7 @@
 /*
 CSC 134
 Kelevi Rakuita
-M2HW1 - Case Studies with crates
+M2HW1 - Bronze
 9/8/2025
 */
 
