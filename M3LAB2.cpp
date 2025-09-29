@@ -20,6 +20,11 @@ int main() {
 
     letter_grader();
     //combat();
+    int roll() {
+const int SIDES = 20;
+int my_roll;
+my_roll = (rand() % SIDES) + 1:
+return my_roll:
     return 0;
 }
 // DEFINE the other function here
@@ -59,4 +64,48 @@ else{
 cout << "A number grade of " << num_grade << " is a (n) " << letter_grade;
 cout << endl <<endl;
 
+}
+
+
+void combat() {
+    /*
+    A simple D&D style combat demo
+    Attck roll + binus >= armor class? TThen hit, else miss
+    */
+    // variables
+    int attck_roll, attck_bonus, enemy_armor;
+    
+    cout << "You are fighting a goblin." << endl;
+    cout << "Enter your roll:";
+    cin >> "attack_roll";
+    cout << "Enter attack_bonus:";
+    cin >> "attack Bonus";
+    cout << "Enemy armor calss; ";
+    cin >> enemy_armor;
+
+    
+    // Roll to hit
+    cout << "Roll; " << attck_roll << attck_bonus << "=" << attck_roll+attck_bonus << endl;
+    if (attck_roll + attck_bonus >= enemy_armor) {
+    cout << "Hit!" << endl;
+    }
+    else {
+    cout << "Miss!" << endl;
+    }
+    
+    // try again?
+    cout << "Again? (y/n):";
+    string again;
+    cin >> again;
+    if (again =="y"){
+    //just call the function again!
+    combat ();
+    }
+}
+
+int roll() {
+const int SIDES = 20;
+int my_roll;
+my_roll = (rand() % SIDES) + 1;
+return my_roll;
 }
