@@ -13,7 +13,7 @@ using namespace std;
 int main(){
 
     //declare variables
-    int length = 10;
+    int length = 20;
     int height = 10;
     string tile = "💀"; // Use any emoji
 
