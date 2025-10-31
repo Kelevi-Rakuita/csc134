@@ -1,6 +1,6 @@
 /*
 CSC 134
-M4HW1- 5 Multiplication table
+M4HW1- (Bronze) 5 Multiplication table
 Kelevi Rakuita
 10/30/2025
 
