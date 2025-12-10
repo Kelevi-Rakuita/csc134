@@ -135,97 +135,97 @@ public:
 // but we reuse internal variable names for simplicity.
 
 vector<EnemyType> hiveEnemies = {
-    {"Lookout Scout", 60, { 
-        Attack("AK Burst", 4, 9, true), 
-        Attack("Rushed Spray", 6, 11, true) 
+    {"Lookout Scout", 60, {
+        Attack("AK Burst", 4, 9, true),
+        Attack("Rushed Spray", 6, 11, true)
     }},
-    {"Rifleman", 80, { 
-        Attack("Controlled Burst", 6, 13, true) 
+    {"Rifleman", 80, {
+        Attack("Controlled Burst", 6, 13, true)
     }},
     {"Suicide Bomber", 70, {
         Attack("Body-borne IED", 60, 80, false, 2, true)
     }},
-    {"Machine Gun Nest", 170, { 
-        Attack("Sustained Fire", 11, 20, true), 
-        Attack("Spray and Pray", 11, 18, true) 
+    {"Machine Gun Nest", 170, {
+        Attack("Sustained Fire", 11, 20, true),
+        Attack("Spray and Pray", 11, 18, true)
     }},
-    {"RPG Gunner", 140, { 
-        Attack("RPG Shot", 13, 22, true), 
-        Attack("Grenade Volley", 11, 20, true) 
+    {"RPG Gunner", 140, {
+        Attack("RPG Shot", 13, 22, true),
+        Attack("Grenade Volley", 11, 20, true)
     }},
-    {"Heavy Gunner", 260, { 
-        Attack("PKM Burst", 16, 28, true), 
-        Attack("Mounted Gun Sweep", 24, 34, true, 2, false) 
+    {"Heavy Gunner", 260, {
+        Attack("PKM Burst", 16, 28, true),
+        Attack("Mounted Gun Sweep", 24, 34, true, 2, false)
     }}
 };
 
 vector<EnemyType> fallenEnemies = {
-    {"Hill Fighter", 44, { 
-        Attack("Single Shot", 4, 9, true), 
-        Attack("Short Burst", 6, 13, true) 
+    {"Hill Fighter", 44, {
+        Attack("Single Shot", 4, 9, true),
+        Attack("Short Burst", 6, 13, true)
     }},
-    {"Ambush Cell", 82, { 
-        Attack("Crossfire", 7, 15, true), 
-        Attack("Close Assault", 6, 11, false) 
+    {"Ambush Cell", 82, {
+        Attack("Crossfire", 7, 15, true),
+        Attack("Close Assault", 6, 11, false)
     }},
-    {"Demolitions Expert", 95, { 
-        Attack("Grenade Toss", 9, 18, true), 
-        Attack("Remote Charge", 11, 20, false) 
+    {"Demolitions Expert", 95, {
+        Attack("Grenade Toss", 9, 18, true),
+        Attack("Remote Charge", 11, 20, false)
     }},
-    {"Spotter Drone", 33, { 
-        Attack("Drone Strike", 3, 7, true), 
-        Attack("Shrapnel Blast", 4, 9, true) 
+    {"Spotter Drone", 33, {
+        Attack("Drone Strike", 3, 7, true),
+        Attack("Shrapnel Blast", 4, 9, true)
     }},
-    {"Mortar Team", 120, { 
-        Attack("Indirect Fire", 11, 20, true) 
+    {"Mortar Team", 120, {
+        Attack("Indirect Fire", 11, 20, true)
     }},
-    {"Cell Leader", 132, { 
-        Attack("Coordinated Volley", 14, 22, true), 
-        Attack("Close Quarter Attack", 17, 27, false) 
+    {"Cell Leader", 132, {
+        Attack("Coordinated Volley", 14, 22, true),
+        Attack("Close Quarter Attack", 17, 27, false)
     }}
 };
 
 vector<EnemyType> vexEnemies = {
-    {"Ridge Marksman", 88, { 
-        Attack("Scoped Shot", 11, 20, true), 
-        Attack("Buttstroke", 10, 15, false) 
+    {"Ridge Marksman", 88, {
+        Attack("Scoped Shot", 11, 20, true),
+        Attack("Buttstroke", 10, 15, false)
     }},
-    {"Tunnel Fighter", 77, { 
-        Attack("Blind Fire", 9, 18, true), 
-        Attack("Knife Flurry", 8, 13, false) 
+    {"Tunnel Fighter", 77, {
+        Attack("Blind Fire", 9, 18, true),
+        Attack("Knife Flurry", 8, 13, false)
     }},
-    {"Technical Truck", 200, { 
-        Attack("Heavy Machine Gun", 18, 30, true), 
-        Attack("Ram Attempt", 13, 22, false) 
+    {"Technical Truck", 200, {
+        Attack("Heavy Machine Gun", 18, 30, true),
+        Attack("Ram Attempt", 13, 22, false)
     }},
-    {"Bunker Team", 160, { 
-        Attack("Interlocking Fire", 15, 24, true), 
-        Attack("Grenade Trap", 10, 18, false) 
+    {"Bunker Team", 160, {
+        Attack("Interlocking Fire", 15, 24, true),
+        Attack("Grenade Trap", 10, 18, false)
     }},
-    {"Flanker Team", 66, { 
-        Attack("Flanking Burst", 8, 15, true), 
-        Attack("Rush", 6, 13, false) 
+    {"Flanker Team", 66, {
+        Attack("Flanking Burst", 8, 15, true),
+        Attack("Rush", 6, 13, false)
     }},
-    {"Hilltop Strongpoint", 300, { 
-        Attack("Enfilade Fire", 28, 44, true), 
-        Attack("Shock-and-Awe Volley", 24, 38, true) 
+    {"Hilltop Strongpoint", 300, {
+        Attack("Enfilade Fire", 28, 44, true),
+        Attack("Shock-and-Awe Volley", 24, 38, true)
     }}
 };
 
 // Boss templates (one per route/sector)
-EnemyType hiveBoss   = {"IED Cache Commander", 440, { 
-    Attack("Coordinated Ambush", 32, 48, true), 
-    Attack("Pre-planned IED Strike", 38, 54, false, 2, false) 
+EnemyType hiveBoss   = {"IED Cache Commander", 440, {
+    Attack("Coordinated Ambush", 32, 48, true),
+    Attack("Pre-planned IED Strike", 38, 54, false, 2, false)
 }, true};
 
-EnemyType fallenBoss = {"Foreign Fighter Commander", 380, { 
-    Attack("Overwatch Killzone", 30, 44, true), 
-    Attack("Mortar Barrage", 32, 46, true) 
+EnemyType fallenBoss = {"Foreign Fighter Commander", 380, {
+    Attack("Overwatch Killzone", 30, 44, true),
+    Attack("Mortar Barrage", 32, 46, true)
 }, true};
 
-EnemyType vexBoss    = {"Mountain Stronghold Leader", 460, { 
-    Attack("Heavy Weapon Barrage", 34, 52, true), 
-    Attack("Coordinated Assault", 30, 44, false) 
+EnemyType vexBoss    = {"Mountain Stronghold Leader", 460, {
+    Attack("Heavy Weapon Barrage", 34, 52, true),
+    Attack("Coordinated Assault", 30, 44, false)
 }, true};
 
 // -------------------- Player --------------------
@@ -746,7 +746,8 @@ bool runPlaythrough() {
 int main() {
     srand((unsigned)time(0));
     pl("=== Mountain Ops: Special Operations IED Hunt ===");
-    pl("Setting: Afghanistan mountains. You lead a small special operations element.\n");
+    pl("Setting: Afghanistan mountains. You lead a small special operations element.");
+    pl("");
 
     while (true) {
         bool playAgain = runPlaythrough();
@@ -754,7 +755,9 @@ int main() {
             pl("RTB. Mission terminated.");
             break;
         }
-        pl("\nRe-initializing mission profile...\n");
+        pl("");
+        pl("Re-initializing mission profile...");
+        pl("");
     }
 
     return 0;
